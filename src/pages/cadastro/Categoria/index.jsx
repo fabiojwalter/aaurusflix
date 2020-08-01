@@ -6,9 +6,10 @@ import Button from '../../../components/Button';
 
 function CadastroCategoria() {
   const defaultObject = {
+    id: '0',
     nome: '',
     descricao: '',
-    cor: '#000',
+    cor: '#000000',
   };
 
   const [categorias, setCategorias] = useState([]);
@@ -43,7 +44,8 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    const URL = 'http://localhost:8080/categorias';
+    const URL = `${process.env.REACT_APP_BACKEND_URL}/categorias`;
+    console.log(`${process.env.REACT_APP_BACKEND_URL}/categorias`);
     fetch(URL)
       .then(async (response) => {
         const jsonData = await response.json();
@@ -96,7 +98,7 @@ function CadastroCategoria() {
         </thead>
         <tbody>
           {categorias.map((categoria) => (
-            <tr>
+            <tr key={categoria.id}>
               <td>{categoria.nome}</td>
               <td>{categoria.descricao}</td>
               <td>{categoria.cor}</td>

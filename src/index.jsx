@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -5,6 +6,8 @@ import './index.css';
 import CadastroCategoria from './pages/cadastro/Categoria';
 import CadastroVideo from './pages/cadastro/Video';
 import Home from './pages/Home';
+
+dotenv.config();
 
 const Pagina404 = () => (
   <div>
@@ -22,5 +25,5 @@ ReactDOM.render(
       <Route component={Pagina404} />
     </Switch>
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
