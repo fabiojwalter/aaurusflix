@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
-import Home from './pages/Home';
-import CadastroVideo from './pages/cadastro/Video';
 import CadastroCategoria from './pages/cadastro/Categoria';
+import CadastroVideo from './pages/cadastro/Video';
+import Home from './pages/Home';
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
-const Pagina404 = () => (<div>Pagina 404 <br /><a href="/">Home</a></div>);
+const Pagina404 = () => (
+  <div>
+    Pagina 404
+    <a href="/">Home</a>
+  </div>
+);
 
 ReactDOM.render(
   <BrowserRouter>

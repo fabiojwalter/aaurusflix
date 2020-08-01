@@ -3,13 +3,15 @@ import Menu from '../Menu';
 import Footer from '../Footer';
 import styled from 'styled-components';
 
+
 const Main = styled.main`
-  background-color: var(--black);
-  color: var(--white);
-  display: flex;
-  padding-top: 50px;
-  padding-left: 5%;
-  padding-right: 5%;
+    background-color: var(--grayDark);
+    color: var(--white);
+    padding-top: 94px;
+    position: relative;
+    height: calc(100vh - 94px);
+    padding-left: 5%;
+    padding-right: 5%;
 `;
 
 

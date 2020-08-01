@@ -1,0 +1,35 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Worship - USA",
+      "descricao": "Os melhores vídeos para você adorar ao som do que toca nos Estados Unidos",
+      "cor": "#f5222d"
+    },
+    {
+      "id": 2,
+      "nome": "De outros tempos",
+      "descricao": "Louvores que marcaram época e ainda continuam expressando aqui que cremos.",
+      "cor": "#eb2f96"
+    },
+    {
+      "id": 3,
+      "nome": "Nova geração",
+      "descricao": "Louvores da nova geração de adoradores do Brasil",
+      "cor": "#ff7a45"
+    },
+    {
+      "id": 4,
+      "nome": "Rock também é Gospel",
+      "descricao": "Para quando a adoração pode ser sua inspiração enquanto corre, treina ou trabalha.",
+      "cor": "#722ed1"
+    },
+    {
+      "id": 5,
+      "nome": "Reggae também é Gospel",
+      "descricao": "Para você que curte um bom Raggea adorar e meditar nas palavras de Deus.",
+      "cor": "#237804"
+    }
+
+  ]
+}

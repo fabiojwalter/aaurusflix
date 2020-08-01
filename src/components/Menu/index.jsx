@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/logo.png';
-import { LogoImage, MenuWrapper } from './style';
 import Button from '../Button';
-
+import { LogoImage, MenuWrapper } from './style';
 
 function Menu() {
   return (
-    <MenuWrapper>
+    <MenuWrapper className="Menu">
       <Link to="/">
         <LogoImage src={Logo} alt="aAurusFlix" />
       </Link>
