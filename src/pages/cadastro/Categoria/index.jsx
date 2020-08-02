@@ -45,13 +45,16 @@ function CadastroCategoria() {
 
   useEffect(() => {
     const URL = `${process.env.REACT_APP_BACKEND_URL}/categorias`;
-    console.log(`${process.env.REACT_APP_BACKEND_URL}/categorias`);
     fetch(URL)
       .then(async (response) => {
-        const jsonData = await response.json();
-        setCategorias([
-          ...jsonData,
-        ]);
+        if (response.ok) {
+          const jsonData = await response.json();
+          setCategorias([
+            ...jsonData,
+          ]);
+        } else {
+          throw new Error('Não foi possível carregar os dados!');
+        }
       });
   }, []);
 
